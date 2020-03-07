@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Validation</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+  <div id="container">
+    <div>
+      <header>
+        <h1>
+          Form Validation
+        </h1>
+      </header>
+    </div>
+    <form id="form" action="/" method="GET">
+      <div>
+        <label for="name">Name:</label>
+        <input id="name" name="name" type="text" autofocus>
+        <p id="invalidName"></p>
+      </div>
+      <div>
+        <label for="email">E-Mail:</label>
+        <input id="email" name="email" type="text" placeholder="example@gmail.com">
+        <p id="invalidEmail"></p>
+      </div>
+      <div>
+        <label for="birthDate">Birthdate:</label>
+        <input id="birthDate" name="birthDate" type="text" placeholder="DD/MM/YYYY">
+        <p id="invalidBirthdate"></p>
+      </div>
+      <div>
+        <label for="phoneNumber">Phone Number:</label>
+        <input id="phoneNumber" name="phoneNumber" type="tel" placeholder="(xxx) xxx-xxxx">
+        <p id="invalidPhone"></p>
+      </div>
+      <div>
+        <label for="password">Password:</label>
+        <input id="password" name="password" type="password">
+        <p id="invalidPassword"></p>
+      </div>
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>

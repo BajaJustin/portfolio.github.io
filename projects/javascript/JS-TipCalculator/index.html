@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tip Calculator</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="container">
+    <header>
+      <h1>
+        Tip Calculator
+      </h1>
+    </header><!-- header end -->
+    <div id="info">
+      <form>
+        <div id="total">
+          <label for="amountDue">Bill Total:</label>
+          <input type="number" id="amountDue" name="amountDue" autofocus placeholder="Enter the Bill Amount">
+        </div>
+        <div id="totalPeople">
+          <label for="numberOfPeople">No. of People:</label>
+          <select id="numberOfPeople">
+            <option value="1">1</option>
+            <option value="2" selected>2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+          </select>
+        </div>
+        <div id="totalTip">
+          <label for="tip">Tip Percentage</label>
+          <select id="tip">
+            <option value="0.05">5%</option>
+            <option value="0.1">10%</option>
+            <option value="0.15" selected>15%</option>
+            <option value="0.20">20%</option>
+            <option value="0.30">30%</option>
+          </select>
+        </div>
+      </form>
+      <button id="submit">
+        Calculate
+      </button>
+      <button id="reset">Reset</button>
+      <div id="single">
+        <p>Tip: $<span id="tipAmount"></span></p>
+        <p>Total: $<span id="billTotal"></span></p>
+      </div><!-- single end-->
+      <div id="multiple">
+        <p>Tip Per Person: $<span id="multipleTip"></span></p>
+        <p>Total Per Person: $<span id="multipleAmountEach"></span></p>
+        <p>Bill Total: $<span id="billTotalMultiple"></span></p>
+      </div><!-- multiple end-->
+    </div><!-- info end -->
+  </div><!-- container end -->
+<script src="js/script.js"></script>
+</body>
+</html>
